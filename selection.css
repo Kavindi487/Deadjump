@@ -1,0 +1,201 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    overflow: hidden;
+    position: absolute;
+}
+.i1{
+    width:300px;
+    height:300px;
+    background-image: url(carss.png);
+    background-size:cover; 
+    margin-top: 95px;
+    margin-left: 300px;
+    position: absolute;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+    transition: 1s;
+}
+.i1 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.i1:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.i3{
+    font-size: 30px;
+    font-family: "Arial";
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top:490px;
+    position: absolute;
+    
+}
+.i2{
+    width:300px;
+    height:300px;
+    margin-left: 900px;
+    margin-top: 95px;
+    background-image: url(zombiess.png);
+    background-size: cover;
+    position: absolute;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+    transition: 1s;
+}
+.i2 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.i2:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.i4{
+    
+    margin-top: 490px;
+    margin-left: 850px;
+    font-size: 30px;
+    font-family: "Arial";
+    font-weight: bold;
+    position: absolute;
+}
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation:animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0px;
+}
+
+
+section .wave.wave2{
+    animation:animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5s;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3{
+    animation:animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.wave4{
+    animation:animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+a{
+    position:relative;
+    display:inline-block;
+    padding:15px 100px;
+    margin-bottom: 80px;
+    color:#8D021F;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    transition:0.2s;
+    
+   
+}
+a:hover{
+    color:#8D021F;
+    background: #D21F3C;
+    box-shadow: 0 0 10px #D21F3C,0 0 40px #D21F3C,0 0 80px #D21F3C ;
+    transition-delay: 1s; 
+}
+
+
+a span{
+    position:absolute;
+    display:block;
+}
+a span:nth-child(1){
+    top:0px;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#D21F3C);
+}
+a:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    bottom:0px;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#D21F3C);
+}
+a:hover span:nth-child(3){
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2){
+    top:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#D21F3C);
+}
+a:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#D21F3C);
+}
+a:hover span:nth-child(2){
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

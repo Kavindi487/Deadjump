@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>start page</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body onload=" meleeStart(); zombieBStart(); zombieGStart(); " class="body">
+        <audio src="start.mp3" id="mySong" loop="loop" autoplay="autoplay"></audio>
+        
+        
+        <div class="d1">
+            <div class="d2">WELCOME!!!   CITY HUNTER.....</div>
+            <a onclick="audio.play();" class="i1" href="selection.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                PLAY
+            </a>
+            <a onclick="audio.play();" class="i2" href="javascript:setTimeout(()=>{window.close},3000);">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                EXIT
+            </a>
+            <img id="girl" class="girl" src="Melee (1).png"/>
+            <img id="zboy" class="zboy" src="Walk (1).png"/>
+            <img id="zgirl" class="zgirl" src="Walk. (1).png"/>
+        </div>
+        <script src="script.js"></script>
+    
+    </body>
+</html>

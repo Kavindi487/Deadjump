@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>City Hunter</title>
+        <link rel="stylesheet" href="zombie.css"/>
+    </head>
+    <body onload="createBoxes(); idleStart();" onkeyup="keyCheck(event);" class="body">
+        <div id="background" class="background">
+            <img src="Idle (1).png" id="girl" class="girl"/>
+            
+            <p class="p1">Your Score:</p>
+            <div class="score" id="score">0</div>
+        </div>
+        <div id="endGame" class="endGame">
+            <div>Game Over.</div>
+            <div>Your Final Score :</div>
+            <div id="endScore">0</div>
+        
+        <div class="neon">
+            <a onclick=" newGame();" class="newGame"  id="newGame" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                New Game
+            </a>
+            <a  class="back"  id="back" href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Back
+            </a>
+        </div>
+        </div>
+        
+        <script src="zombie.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+.body{
+    margin:0px;
+}
+.background{
+    height:100vh;
+    width:100%;
+    background-image: url("zombiecity_copy.png");
+    position: absolute;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.girl{
+    height:260px;
+    margin-top: 450px;
+    position: absolute;
+}
+.box{
+    height:250px;
+    width:100px;
+    /* background-color: black; */
+    background-image: url("zombie (1).gif");
+    position: absolute;
+    margin-top: 460px;
+    background-size: 100% 100%; 
+}
+.p1{
+    font-size: 35px;
+    font-weight: bold;
+    font-family:"Algerian";
+    margin-left: 4px;
+    margin-top: 4px;
+    position: absolute;
+}
+.score{
+    font-size: 50px;
+    margin-top:2px;
+    margin-left: 230px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: "Arial";
+    line-height: 37px;
+}
+.endGame{
+    width:100%;
+    height:100vh;
+    /* background-image: url("gameover.png"); */
+    background-color:#043927; 
+    position:absolute;
+    /* margin-top: 20px; */
+    font-family: "Arial";
+    font-size: 80px;
+    font-weight: bold;
+    color:#7FFF00;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    visibility: hidden;
+}
+/* .newGame{
+    width:200px;
+    height:40px;
+    background-color: green;
+    border:none;
+    border-radius: 7px;
+    color: white;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 80px;
+} */
+.neon{
+    position: absolute;
+    margin-top: 570px;
+
+} 
+
+
+a{
+    position:relative;
+    cursor: pointer;
+    display:inline-block;
+    padding:15px 100px;
+    margin-bottom: 80px;
+    color:#7FFF00;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    transition:0.2s;
+    
+   
+}
+a:hover{
+    color:#043927;
+    background: #37FD12;
+    box-shadow: 0 0 10px #37FD12,0 0 40px #37FD12,0 0 80px #37FD12 ;
+    transition-delay: 1s; 
+}
+
+
+a span{
+    position:absolute;
+    display:block;
+}
+a span:nth-child(1){
+    top:0px;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#37FD12);
+}
+a:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    bottom:0px;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#37FD12);
+}
+a:hover span:nth-child(3){
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2){
+    top:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#37FD12);
+}
+a:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(360deg,transparent,#37FD12);
+}
+a:hover span:nth-child(2){
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
